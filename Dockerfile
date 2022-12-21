@@ -41,7 +41,7 @@ RUN apt update && apt install --no-install-recommends -y $PACKAGES  && \
  
 # Install radiant-node
 WORKDIR /root
-RUN git clone --depth 1 --branch v1.2.0 https://github.com/radiantblockchain/electrumx.git
+RUN git clone --depth 1 --branch v1.0.0 https://github.com/radiantblockchain/electrumx.git
 WORKDIR /root/electrumx
 
 RUN python3 -m pip install aiorpcx
